@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<link rel="icon" href='./images/weather.png'></link>
+<link rel="icon" href='./images/favicon.png'></link>
+<link rel="stylesheet" href='./css/styles.min.css'>
 <body>
-  <p>Chat App</p>
-  <form id='send-message'>
-    <input name="send-message" placeholder="Type Message">
-    <button>Send</button>
-  </form>
-  <button id='send-location'>Share Location</button>
-  <script src='/socket.io/socket.io.js'></script>
-  <script src='./js/Chat.js'></script>
+  <div class="centered-form">
+    <div class="centered-form__box">
+      <h1>Join</h1>
+    <form action="./chat.html">
+      <input name="username" placeholder="username" required>
+      <input name="room" placeholder="room" required>
+      <button >Join</button>
+    </form>
+    </div>
+  </div>
 </body>
