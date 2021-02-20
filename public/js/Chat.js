@@ -25,7 +25,6 @@ const autoscroll = () => {
   const visibleHeight = $messages.offsetHeight;
   const containerHeight = $messages.scrollHeight;
   const scrollOffset = $messages.scrollTop + visibleHeight;
-  console.log($newMessage, $newMessageHeight, visibleHeight, containerHeight, $messages, $messages.scrollTop);
   if (containerHeight - $newMessageHeight <= scrollOffset) {
     $messages.scrollTop = $messages.scrollHeight
   }
@@ -67,7 +66,6 @@ socket.on('message', (details) => {
   autoscroll();
 })
 socket.on('location-message', (details) => {
-  console.log()
   let html = Mustache.render(locationTemplate, {
     username: details.username,
     createAt: moment(details.createAt).format('h:mm a'),
