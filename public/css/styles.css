@@ -42,13 +42,13 @@ button {
     padding: 12px;
     background: #7C5CBF;
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 16px;
     transition: background .3s ease;
 }
 
 button:hover {
-    background: #6b47b8;
+    background: #4f47b8;
 }
 
 button:disabled {
